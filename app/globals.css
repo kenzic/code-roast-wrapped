@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --phthalo-green: #1c3a2c;
+  --hunter-green: #37654b;
+  --satin-sheen-gold: #cba135;
+  --dutch-white: #efdfb7;
+  --deep-forest: #10251c;
+  --ink-dark: #0a1510;
+}
+
+body {
+  background:
+    radial-gradient(circle at 18% 12%, #2a4e3b 0%, transparent 42%),
+    radial-gradient(circle at 84% 88%, #5f4b1c 0%, transparent 40%),
+    linear-gradient(155deg, var(--ink-dark) 0%, var(--deep-forest) 100%);
+  color: var(--dutch-white);
+  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
