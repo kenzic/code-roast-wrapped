@@ -16,63 +16,11 @@ export const FPS = 30;
 
 /** Scene component definitions (Zod props + metadata). Single source of truth for catalog and inferred types. */
 export const roastComponentDefinitions = {
-  RoastOpener: {
-    description:
-      "Full-screen opener with repo + owner and a sharp roast tagline.",
-    props: z.object({
-      repoName: z.string(),
-      ownerName: z.string(),
-      tagline: z.string(),
-    }),
-    type: "scene",
-    defaultDuration: SCENE_DURATION_FRAMES,
-  },
-  CrimeStat: {
-    description:
-      "A metric framed as a criminal offense with severity label for humor.",
-    props: z.object({
-      crime: z.string(),
-      stat: z.string(),
-      severity: z.enum(["misdemeanor", "felony", "capital offense"]),
-    }),
-    type: "scene",
-    defaultDuration: SCENE_DURATION_FRAMES,
-  },
-  ShameTimeline: {
-    description: "Highlights a suspicious commit timeline trend.",
-    props: z.object({
-      label: z.string(),
-      insight: z.string(),
-    }),
-    type: "scene",
-    defaultDuration: SCENE_DURATION_FRAMES,
-  },
-  HallOfFame: {
-    description: "One genuinely positive highlight to keep it friendly.",
-    props: z.object({
-      title: z.string(),
-      description: z.string(),
-    }),
-    type: "scene",
-    defaultDuration: SCENE_DURATION_FRAMES,
-  },
-  Verdict: {
-    description: "Final developer archetype and mock sentence.",
-    props: z.object({
-      archetype: z.string(),
-      description: z.string(),
-      sentence: z.string(),
-    }),
-    type: "scene",
-    defaultDuration: SCENE_DURATION_FRAMES,
-  },
+  // Add component definitions here
 };
 
-export const catalog = defineCatalog(schema, {
-  components: roastComponentDefinitions,
-  transitions: standardTransitionDefinitions,
-  effects: standardEffectDefinitions,
-});
+// Add defineCatalog here
+export const catalog = null;
 
 const roastSystemPrompt = `
 You are Code Roast, a sharp but fair code reviewer.

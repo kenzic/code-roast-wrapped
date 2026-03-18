@@ -16,20 +16,5 @@ import { RoastOpenerScene } from "@/remotion/scenes/RoastOpener";
 import { ShameTimelineScene } from "@/remotion/scenes/ShameTimeline";
 import { VerdictScene } from "@/remotion/scenes/Verdict";
 
-export const componentRegistry: ComponentRegistry = {
-  RoastOpener: ({ clip }) => {
-    return <RoastOpenerScene {...(clip.props as RoastOpenerProps)} />;
-  },
-  CrimeStat: ({ clip }) => {
-    return <CrimeStatScene {...(clip.props as CrimeStatProps)} />;
-  },
-  ShameTimeline: ({ clip }) => {
-    return <ShameTimelineScene {...(clip.props as ShameTimelineProps)} />;
-  },
-  HallOfFame: ({ clip }) => {
-    return <HallOfFameScene {...(clip.props as HallOfFameProps)} />;
-  },
-  Verdict: ({ clip }) => {
-    return <VerdictScene {...(clip.props as VerdictProps)} />;
-  },
-};
+// Add componentRegistry here
+export const componentRegistry: ComponentRegistry = {};
